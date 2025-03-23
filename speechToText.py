@@ -1,10 +1,13 @@
 
 
 import azure.cognitiveservices.speech as speechsdk
+import time
 
 class SpeechToTextConversion:
 
+
     def convert_doctor_voice_to_text(self):
+        transcript_file = open("transcription.txt", "a", encoding="utf-8")
         speech_key = ""
         region = "eastus"
 
@@ -22,6 +25,8 @@ class SpeechToTextConversion:
         #if doctor says stop it will be stopped
         def handle_recognized(evt):
             recognized_text = evt.result.text.lower()
+            if recognized_text.strip():  # Only write non-empty lines
+                transcript_file.write(recognized_text + "\n")
             print("Recognized:", recognized_text)
             #
             if "stop it" in recognized_text:
@@ -37,10 +42,11 @@ class SpeechToTextConversion:
 
         speech_recognizer.start_continuous_recognition()
 
-        # Wait until 'stop' is triggered
-        import time
+        #when should_stop["value]==false, stop writing it to the file
+
         while not should_stop["value"]:
             time.sleep(0.5)
+        transcript_file.close()
 
 
 
