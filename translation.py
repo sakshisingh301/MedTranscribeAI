@@ -5,7 +5,9 @@ class Translator:
     def __init__(self):
         self.subscription_key = ""
         self.region = "eastus"
-        self.endpoint = "https://api.cognitive.microsofttranslator.com/detect?api-version=3.0"
+        self.endpoint = "https://api.cognitive.microsofttranslator.com"
+        self.pathforlandetection="/detect?api-version=3.0"
+        self.pathforlanconversion="/translate?api-version=3.0&from=es&to=en"
 
     def detect_language(self, file_path):
         with open(file_path, "r", encoding="utf-8") as f:
@@ -21,7 +23,7 @@ class Translator:
 
         body = [{"text": text}]
 
-        response = requests.post(self.endpoint, headers=headers, json=body)
+        response = requests.post(self.endpoint+self.pathforlandetection, headers=headers, json=body)
         result = response.json()
 
         # Extract language
@@ -32,6 +34,29 @@ class Translator:
 
         return language
 
+    def translate_spanish_to_english(self,file_path):
+
+        with open(file_path, "r", encoding="utf-8") as f:
+            text = f.read()
+
+        headers = {
+            "Ocp-Apim-Subscription-Key": self.subscription_key,
+            "Ocp-Apim-Subscription-Region": self.region,
+            "Content-type": "application/json",
+            "X-ClientTraceId": str(uuid.uuid4())
+        }
+        body = [{"text": text}]
+        response = requests.post(self.endpoint + self.pathforlanconversion, headers=headers, json=body)
+        result = response.json()
+
+        translated_text = result[0]["translations"][0]["text"]
+        with open("translated_to_english.txt", "w", encoding="utf-8") as out_file:
+            out_file.write(translated_text)
+
+
+
+
+
 
 
 # Example usage
@@ -40,8 +65,11 @@ if __name__ == "__main__":
     detected_lang = detector.detect_language("transcription.txt")
 
     if detected_lang == "en":
-        print("✅ It's in English. You can now simplify or summarize.")
+        print("english detected")
+
     elif detected_lang == "es":
-        print("✅ It's in Spanish. Use Spanish-specific processing.")
+        detector.translate_spanish_to_english("transcription.txt")
+
+
     else:
         print("❓ Unrecognized or unsupported language.")
