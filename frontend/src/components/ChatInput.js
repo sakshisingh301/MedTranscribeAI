@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { Upload, Send } from 'lucide-react';
+import React, { useState, useRef } from 'react';
+import { Plus, Send, File } from 'lucide-react';
 
 const ChatInput = ({ onSendMessage }) => {
   const [message, setMessage] = useState('');
   const [files, setFiles] = useState([]);
+  const fileInputRef = useRef(null);
 
   const handleMessageChange = (e) => {
     setMessage(e.target.value);
@@ -14,11 +15,19 @@ const ChatInput = ({ onSendMessage }) => {
     setFiles(prevFiles => [...prevFiles, ...uploadedFiles]);
   };
 
+  const triggerFileInput = () => {
+    fileInputRef.current.click();
+  };
+
   const handleSendMessage = () => {
     if (message.trim() || files.length > 0) {
       onSendMessage(message, files);
       setMessage('');
       setFiles([]);
+      // Reset the file input
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
+      }
     }
   };
 
@@ -27,18 +36,25 @@ const ChatInput = ({ onSendMessage }) => {
   };
 
   return (
-    <>
-      {/* File Upload Preview */}
+    <div className="chat-input-wrapper">
+      {/* Completely Hidden File Input */}
+      <input 
+        type="file" 
+        ref={fileInputRef}
+        multiple
+        style={{ display: 'none' }}
+        onChange={handleFileUpload}
+      />
+
+      {/* File Preview Area */}
       {files.length > 0 && (
-        <div className="file-preview">
+        <div className="file-preview-container">
           {files.map((file, index) => (
-            <div 
-              key={index} 
-              className="file-preview-item"
-            >
-              <span>{file.name}</span>
+            <div key={index} className="file-preview-item">
+              <File size={16} />
+              <span className="file-name">{file.name}</span>
               <button 
-                onClick={() => removeFile(index)}
+                onClick={() => removeFile(index)} 
                 className="file-remove-btn"
               >
                 ×
@@ -48,30 +64,23 @@ const ChatInput = ({ onSendMessage }) => {
         </div>
       )}
 
-      {/* Message Input Area */}
+      {/* Input Container */}
       <div className="chat-input-container">
-        {/* File Upload Input */}
-        <label 
-          htmlFor="file-upload" 
-          className="chat-file-upload"
+        {/* File Upload Plus Button */}
+        <button 
+          onClick={triggerFileInput}
+          className="file-upload-btn"
         >
-          <Upload className="text-gray-600" />
-          <input 
-            type="file" 
-            id="file-upload"
-            multiple
-            className="hidden"
-            onChange={handleFileUpload}
-          />
-        </label>
+          <Plus size={24} />
+        </button>
 
         {/* Message Input */}
         <input 
           type="text"
           placeholder="Enter a message"
-          className="chat-message-input"
           value={message}
           onChange={handleMessageChange}
+          className="message-input"
           onKeyPress={(e) => {
             if (e.key === 'Enter') {
               handleSendMessage();
@@ -82,13 +91,13 @@ const ChatInput = ({ onSendMessage }) => {
         {/* Send Button */}
         <button 
           onClick={handleSendMessage}
-          className="chat-send-btn"
+          className="send-btn"
           disabled={!message.trim() && files.length === 0}
         >
-          <Send />
+          <Send size={24} />
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

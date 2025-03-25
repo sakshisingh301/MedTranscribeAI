@@ -1,26 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import ChatHeader from './ChatHeader';
 import ChatInput from './ChatInput';
+import ChatBubble from './ChatBubble';
 
 const ChatPage = () => {
   const [messages, setMessages] = useState([]);
+  const messagesEndRef = useRef(null);
 
   const handleSendMessage = (message, files) => {
-    const newMessage = {
-      text: message,
-      files: files,
-      timestamp: new Date(),
-      sender: 'user'
-    };
+    if (message.trim() || files.length > 0) {
+      const newMessage = {
+        id: Date.now(),
+        text: message,
+        type: 'user',
+        files: files,
+        timestamp: new Date()
+      };
 
-    setMessages(prevMessages => [...prevMessages, newMessage]);
-    console.log('Sending message:', newMessage);
+      setMessages(prevMessages => [...prevMessages, newMessage]);
+    }
   };
+
+  // Scroll to bottom whenever messages change
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
 
   return (
     <div className="chat-container">
       {/* Chat Header */}
-      <ChatHeader title="Conversation Application" />
+      <ChatHeader title="MedTranscribe AI" />
 
       {/* Chat Messages Area */}
       <div className="chat-messages">
@@ -29,17 +38,16 @@ const ChatPage = () => {
             No messages yet. Start a conversation!
           </div>
         ) : (
-          messages.map((msg, index) => (
-            <div key={index} className="mb-2">
-              <div>{msg.text}</div>
-              {msg.files && msg.files.length > 0 && (
-                <div className="text-sm text-gray-500">
-                  Attached files: {msg.files.map(file => file.name).join(', ')}
-                </div>
-              )}
-            </div>
+          messages.map((msg) => (
+            <ChatBubble 
+              key={msg.id} 
+              message={msg.text} 
+              type={msg.type}
+            />
           ))
         )}
+        {/* Dummy div to enable scrolling to bottom */}
+        <div ref={messagesEndRef} />
       </div>
 
       {/* Chat Input */}
