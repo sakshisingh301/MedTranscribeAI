@@ -1,0 +1,418 @@
+[
+  {
+    "complex_text": "The patient exhibits significant tachyarrhythmia necessitating immediate evaluation.",
+    "simple_text": "The patient has a very fast, irregular heartbeat and needs quick testing."
+  },
+  {
+    "complex_text": "Concurrent hyperlipidemia and hypertension demand vigilant lipid panel monitoring and blood pressure assessment.",
+    "simple_text": "High cholesterol and high blood pressure require careful checks of cholesterol and blood pressure."
+  },
+  {
+    "complex_text": "Neurological examination indicates a possible cerebrovascular accident, warranting urgent imaging.",
+    "simple_text": "A brain exam suggests a possible stroke, so immediate scans are needed."
+  },
+  {
+    "complex_text": "Administration of broad-spectrum antimicrobials is indicated for suspected multi-drug resistant organisms.",
+    "simple_text": "We need strong antibiotics to treat germs that might resist regular medicines."
+  },
+  {
+    "complex_text": "Elevated fasting plasma glucose suggests poorly controlled type 2 diabetes mellitus.",
+    "simple_text": "High blood sugar levels point to uncontrolled type 2 diabetes."
+  },
+  {
+    "complex_text": "Chronic obstructive pulmonary disease exacerbation led to substantial respiratory compromise.",
+    "simple_text": "Worsened lung disease caused serious breathing problems."
+  },
+  {
+    "complex_text": "Magnetic resonance imaging revealed demyelinating lesions consistent with multiple sclerosis.",
+    "simple_text": "An MRI found nerve damage spots that match multiple sclerosis."
+  },
+  {
+    "complex_text": "The individual experiences acute myocardial infarction symptoms, including diaphoresis and severe chest discomfort.",
+    "simple_text": "They have signs of a heart attack, like sweating and strong chest pain."
+  },
+  {
+    "complex_text": "Marked leukocytosis may suggest an ongoing infectious or inflammatory process.",
+    "simple_text": "A high white blood cell count could mean there's an infection or inflammation."
+  },
+  {
+    "complex_text": "Excessive hyperglycemia and ketoacidosis necessitate urgent insulin therapy.",
+    "simple_text": "Very high blood sugar and acid build-up in the blood need immediate insulin treatment."
+  },
+  {
+    "complex_text": "Severe acute respiratory syndrome coronavirus 2 infection led to bilateral pneumonic infiltrates.",
+    "simple_text": "A dangerous coronavirus infection caused double lung infection."
+  },
+  {
+    "complex_text": "Intravenous immunoglobulin was administered to manage the acute autoimmune encephalitis.",
+    "simple_text": "They gave IV immunoglobulin to treat sudden autoimmune brain inflammation."
+  },
+  {
+    "complex_text": "Persistent hyperemesis gravidarum necessitated hospitalization for intravenous hydration.",
+    "simple_text": "Ongoing severe vomiting in pregnancy required a hospital stay for IV fluids."
+  },
+  {
+    "complex_text": "A laparoscopic cholecystectomy was performed to address symptomatic gallbladder lithiasis.",
+    "simple_text": "Keyhole surgery removed the gallbladder because of painful gallstones."
+  },
+  {
+    "complex_text": "Elevated intracranial pressure indicated potential hydrocephalus requiring neurosurgical evaluation.",
+    "simple_text": "High pressure in the head suggested fluid buildup in the brain, needing a specialist check."
+  },
+  {
+    "complex_text": "Histopathological analysis confirmed a malignant neoplasm in the colon necessitating oncological intervention.",
+    "simple_text": "Tissue tests showed colon cancer, so cancer treatment is needed."
+  },
+  {
+    "complex_text": "Persistent rheumatoid arthritis flares have induced progressive synovial inflammation and articular damage.",
+    "simple_text": "Ongoing arthritis attacks are causing more joint swelling and damage."
+  },
+  {
+    "complex_text": "Prolonged febrile neutropenia in an immunocompromised host mandates broad diagnostic measures.",
+    "simple_text": "A fever with low white cells in someone with weak immunity means many tests are needed."
+  },
+  {
+    "complex_text": "A cerebrospinal fluid analysis revealed elevated protein and pleocytosis indicative of meningitis.",
+    "simple_text": "Spinal fluid tests showed high protein and extra cells, pointing to meningitis."
+  },
+  {
+    "complex_text": "Echocardiography detected a significant pericardial effusion, posing the risk of cardiac tamponade.",
+    "simple_text": "An ultrasound found a large fluid buildup around the heart, which could stop it from pumping well."
+  },
+  {
+    "complex_text": "An advanced cataract necessitated surgical intervention to improve the patient's visual acuity.",
+    "simple_text": "A very cloudy lens needed an operation to help the patient see better."
+  },
+  {
+    "complex_text": "A thorough pulmonary function test is advised to gauge the severity of chronic obstructive pathology.",
+    "simple_text": "A full lung test is recommended to see how bad the chronic breathing problem is."
+  },
+  {
+    "complex_text": "Clinical evidence of congestive hepatopathy was noted, likely secondary to right-sided heart failure.",
+    "simple_text": "Liver problems from poor blood flow were seen, probably due to the heart not pumping well on the right side."
+  },
+  {
+    "complex_text": "The patient exhibits cushingoid features, suggesting exogenous steroid overuse or endogenous hypercortisolism.",
+    "simple_text": "They show signs of high steroid levels, either from too many steroids or a condition causing too much cortisol."
+  },
+  {
+    "complex_text": "An elevated serum creatinine indicates declining renal function demanding nephrological consultation.",
+    "simple_text": "A high creatinine level suggests worsening kidney function, so a kidney specialist is needed."
+  },
+  {
+    "complex_text": "Electroencephalography revealed epileptic foci, necessitating antiepileptic drug initiation.",
+    "simple_text": "A brain scan found seizure spots, so medication for epilepsy is needed."
+  },
+  {
+    "complex_text": "Neuropathic pain attributed to diabetic peripheral neuropathy requires consistent glycemic control and analgesics.",
+    "simple_text": "Nerve pain from diabetes needs stable blood sugar and pain medication."
+  },
+  {
+    "complex_text": "Maternal anemia in the second trimester mandates iron supplementation and dietary evaluation.",
+    "simple_text": "Low blood iron during mid-pregnancy means she needs iron tablets and a diet check."
+  },
+  {
+    "complex_text": "Intravenous contrast CT scan revealed multiple hepatic lesions suggestive of metastatic disease.",
+    "simple_text": "A contrast CT of the liver found several spots that could mean cancer spread."
+  },
+  {
+    "complex_text": "Elevated TSH with low T4 levels denote hypothyroidism, necessitating levothyroxine therapy.",
+    "simple_text": "High TSH and low T4 mean an underactive thyroid, so thyroid medicine is needed."
+  },
+  {
+    "complex_text": "A prophylactic mastectomy was considered for high-risk patients with BRCA1 gene mutation.",
+    "simple_text": "Preventive breast removal was discussed for those with a high-risk gene mutation."
+  },
+  {
+    "complex_text": "Marfan syndrome manifestations include aortic root dilatation, necessitating routine cardiac imaging.",
+    "simple_text": "People with Marfan can have a large aorta, so they need regular heart scans."
+  },
+  {
+    "complex_text": "Hyperemesis caused notable electrolyte disturbances, specifically hypokalemia and metabolic alkalosis.",
+    "simple_text": "Severe vomiting led to low potassium and an imbalance in blood chemistry."
+  },
+  {
+    "complex_text": "Lumbar puncture findings were consistent with subarachnoid hemorrhage, warranting neurosurgical referral.",
+    "simple_text": "A spinal tap showed bleeding in the space around the brain, so a brain surgeon is needed."
+  },
+  {
+    "complex_text": "Persistent myocardial ischemia requires prompt angiographic evaluation and possible stent placement.",
+    "simple_text": "Ongoing poor blood flow to the heart means they need a heart artery scan and maybe a stent."
+  },
+  {
+    "complex_text": "Chronic pancreatitis has led to exocrine insufficiency, implying enzyme replacement therapy.",
+    "simple_text": "Long-term pancreas inflammation caused poor enzyme production, so enzyme pills are needed."
+  },
+  {
+    "complex_text": "An elevated alkaline phosphatase and gamma-GT suggest cholestatic liver pathology.",
+    "simple_text": "High liver enzymes point to a bile flow problem in the liver."
+  },
+  {
+    "complex_text": "Uterine fibroids causing menorrhagia might necessitate surgical intervention if medical management fails.",
+    "simple_text": "Noncancerous womb growths leading to heavy periods may need surgery if medication doesn't help."
+  },
+  {
+    "complex_text": "A splenic rupture was identified, demanding emergent surgical repair to control hemorrhage.",
+    "simple_text": "A torn spleen was found, so immediate surgery is needed to stop bleeding."
+  },
+  {
+    "complex_text": "Arterial blood gas analysis shows acute respiratory acidosis necessitating ventilatory support.",
+    "simple_text": "A blood test showed too much carbon dioxide in the blood, so a breathing machine might be needed."
+  },
+  {
+    "complex_text": "Ophthalmologic assessment revealed macular edema requiring intravitreal injections.",
+    "simple_text": "An eye exam found swelling in the central retina, needing injections in the eye."
+  },
+  {
+    "complex_text": "A multi-nodular goiter compressing the trachea may necessitate partial thyroidectomy.",
+    "simple_text": "An enlarged thyroid with multiple lumps is pressing the windpipe, so part of the thyroid might need removal."
+  },
+  {
+    "complex_text": "Uncontrolled gastroesophageal reflux disease increases the risk of esophageal strictures and Barrett’s esophagus.",
+    "simple_text": "Bad acid reflux can scar the food pipe or cause Barrett's changes."
+  },
+  {
+    "complex_text": "A hemoglobin electrophoresis test confirmed sickle cell disease.",
+    "simple_text": "A specialized blood test showed the patient has sickle cell disease."
+  },
+  {
+    "complex_text": "Degenerative disc disease in the lumbar region contributes to chronic lower back pain and radiculopathy.",
+    "simple_text": "Wear-and-tear of spinal discs in the lower back causes constant pain and nerve problems."
+  },
+  {
+    "complex_text": "Bilateral pleural effusions noted on chest imaging raise suspicion of heart failure or infection.",
+    "simple_text": "Fluid in both lung spaces could mean heart failure or an infection."
+  },
+  {
+    "complex_text": "Abdominal ultrasound demonstrates multiple renal calculi, potentially necessitating lithotripsy.",
+    "simple_text": "An ultrasound shows many kidney stones, which might need shock wave treatment."
+  },
+  {
+    "complex_text": "Hyperuricemia precipitated an acute gout attack in the metatarsophalangeal joint.",
+    "simple_text": "High uric acid caused a sudden gout flare in the big toe joint."
+  },
+  {
+    "complex_text": "A complete blood count showed thrombocytopenia, raising concerns for possible platelet disorder.",
+    "simple_text": "A blood test revealed low platelets, which might mean a platelet condition."
+  },
+  {
+    "complex_text": "A prothrombin time/INR elevation suggests potential coagulopathy needing vitamin K or other interventions.",
+    "simple_text": "A high INR means blood might not clot well, so vitamin K or other treatments may be needed."
+  },
+  {
+    "complex_text": "Histological analysis of the lymph node biopsy confirmed Hodgkin lymphoma.",
+    "simple_text": "A tissue exam from a lymph node showed Hodgkin lymphoma."
+  },
+  {
+    "complex_text": "A degenerative meniscal tear in the knee joint necessitates orthopedic evaluation.",
+    "simple_text": "A worn-down cartilage piece in the knee needs an orthopedic specialist's look."
+  },
+  {
+    "complex_text": "High-frequency hearing loss was detected, indicating potential noise-induced cochlear damage.",
+    "simple_text": "Tests found hearing loss at high pitches, possibly from loud noise harming the ear."
+  },
+  {
+    "complex_text": "Atrial fibrillation with rapid ventricular response warrants rate control and anticoagulation therapy.",
+    "simple_text": "An irregular heartbeat that’s too fast needs medication to slow the heart and prevent clots."
+  },
+  {
+    "complex_text": "Reactive airway disease exacerbation manifested as audible wheezing and reduced peak flow.",
+    "simple_text": "Flared-up asthma showed wheezing and low peak flow readings."
+  },
+  {
+    "complex_text": "Endoscopy revealed a peptic ulcer with active bleeding necessitating endoscopic intervention.",
+    "simple_text": "A scope found a bleeding stomach ulcer that needs immediate treatment."
+  },
+  {
+    "complex_text": "Chronic renal insufficiency requires dietary phosphate restriction and possible phosphate binders.",
+    "simple_text": "Long-term kidney problems need less phosphate in the diet and maybe medicines to reduce phosphate."
+  },
+  {
+    "complex_text": "Pericarditis symptoms present with sharp retrosternal chest pain and a pericardial friction rub.",
+    "simple_text": "Heart sac inflammation shows chest pain behind the breastbone and a scratchy sound."
+  },
+  {
+    "complex_text": "A newly diagnosed atrial septal defect could progress to right heart overload without correction.",
+    "simple_text": "A hole in the heart's upper chambers can strain the right side of the heart if not fixed."
+  },
+  {
+    "complex_text": "Infective endocarditis prophylaxis is indicated for high-risk valvular lesions undergoing invasive procedures.",
+    "simple_text": "People with risky heart valve issues need antibiotics before certain procedures."
+  },
+  {
+    "complex_text": "Ischemic changes on electrocardiogram correlate with claudication, suggesting peripheral arterial disease progression.",
+    "simple_text": "Heart scan changes plus leg pain on walking suggest worse artery disease."
+  },
+  {
+    "complex_text": "Diabetic retinopathy is characterized by neovascularization, hemorrhages, and potential vision loss.",
+    "simple_text": "New, fragile blood vessels grow in the eye from diabetes, which can bleed and harm vision."
+  },
+  {
+    "complex_text": "A barium swallow test detected esophageal diverticula that might require surgical resection.",
+    "simple_text": "An X-ray test found pouches in the food pipe that may need surgery."
+  },
+  {
+    "complex_text": "Elevated troponin levels point to myocardial cell damage, likely from an acute coronary syndrome.",
+    "simple_text": "High troponin means heart muscle injury, usually from a heart attack."
+  },
+  {
+    "complex_text": "Significant uterine prolapse was observed, necessitating pelvic organ support evaluation.",
+    "simple_text": "The womb has dropped significantly, so we need to check pelvic support."
+  },
+  {
+    "complex_text": "Femoral-popliteal bypass grafting was performed to alleviate critical limb ischemia.",
+    "simple_text": "Surgery rerouted blood flow around blocked leg arteries to save the limb."
+  },
+  {
+    "complex_text": "A lactose hydrogen breath test confirmed lactose intolerance, advising dietary lactose restriction.",
+    "simple_text": "A breath test showed the patient can't digest lactose well, so they should avoid it."
+  },
+  {
+    "complex_text": "Perioperative beta-blockade is recommended to reduce cardiac complications in high-risk surgery patients.",
+    "simple_text": "Using beta-blocker drugs around surgery can lower heart problems in risky patients."
+  },
+  {
+    "complex_text": "Dermatological evaluation identified plaque psoriasis necessitating topical and possibly systemic therapy.",
+    "simple_text": "A skin check showed psoriasis patches, needing creams or maybe more intense treatment."
+  },
+  {
+    "complex_text": "A significant pleural-based mass on CT scan raises concern for possible mesothelioma.",
+    "simple_text": "A large growth near the lung lining may be mesothelioma."
+  },
+  {
+    "complex_text": "Temporal arteritis was suspected given elevated ESR and unilateral headaches in an elderly patient.",
+    "simple_text": "Inflamed head arteries were suspected because of high inflammation markers and one-sided headaches in an older patient."
+  },
+  {
+    "complex_text": "Radiographic examination revealed degenerative changes in the hip joint consistent with osteoarthritis.",
+    "simple_text": "An X-ray showed wear-and-tear damage in the hip joint, pointing to arthritis."
+  },
+  {
+    "complex_text": "Frequent hyperglycemic episodes necessitate continuous glucose monitoring and insulin regimen adjustment.",
+    "simple_text": "Repeated high blood sugar spikes mean the patient needs a glucose monitor and insulin changes."
+  },
+  {
+    "complex_text": "Polycystic ovary syndrome is characterized by oligo-ovulation, hyperandrogenism, and polycystic ovaries.",
+    "simple_text": "PCOS causes irregular periods, high male hormones, and multiple cysts in the ovaries."
+  },
+  {
+    "complex_text": "A transesophageal echocardiogram found a vegetation on the mitral valve, confirming infective endocarditis.",
+    "simple_text": "A specialized heart ultrasound saw an infected growth on the mitral valve."
+  },
+  {
+    "complex_text": "Pancreatic insufficiency due to chronic pancreatitis requires enzyme replacement and nutritional support.",
+    "simple_text": "Long-term pancreas damage means the patient needs enzyme supplements and diet help."
+  },
+  {
+    "complex_text": "A colposcopic examination revealed cervical dysplasia, prompting a loop electrosurgical excision procedure.",
+    "simple_text": "A closer look at the cervix showed abnormal cells, needing a minor electric loop surgery."
+  },
+  {
+    "complex_text": "Hepatic encephalopathy features disorientation and asterixis from impaired ammonia clearance.",
+    "simple_text": "Liver trouble leads to confusion and flapping hands because the body can't remove ammonia."
+  },
+  {
+    "complex_text": "Advanced multiple myeloma was diagnosed based on bone lesions, anemia, and high monoclonal protein.",
+    "simple_text": "Late-stage myeloma was found through bone damage, low blood cells, and extra protein."
+  },
+  {
+    "complex_text": "Hyperaldosteronism manifested as persistent hypokalemia and hypertension, necessitating adrenal imaging.",
+    "simple_text": "Too much aldosterone hormone caused low potassium and high blood pressure, needing a scan of the adrenal glands."
+  },
+  {
+    "complex_text": "A sentinel lymph node biopsy was performed to stage invasive breast carcinoma.",
+    "simple_text": "They took and tested the first lymph node to see if breast cancer spread."
+  },
+  {
+    "complex_text": "Celiac disease prompted evaluation for malabsorption, requiring a gluten-free diet.",
+    "simple_text": "An immune reaction to gluten causes trouble absorbing nutrients, so the patient needs a gluten-free diet."
+  },
+  {
+    "complex_text": "Auditory evoked potentials suggested demyelinating pathology consistent with multiple sclerosis.",
+    "simple_text": "A hearing nerve test showed nerve damage matching multiple sclerosis."
+  },
+  {
+    "complex_text": "Chronic venous insufficiency led to varicose veins and edema, possibly requiring compression therapy.",
+    "simple_text": "Poor vein flow caused swollen, twisted veins and leg swelling, so compression stockings may help."
+  },
+  {
+    "complex_text": "Biopsy of the thyroid nodule identified papillary carcinoma, indicating thyroidectomy.",
+    "simple_text": "A sample from the thyroid lump showed papillary cancer, so part or all of the thyroid must be removed."
+  },
+  {
+    "complex_text": "A glucose tolerance test confirmed gestational diabetes, necessitating dietary control and possible insulin.",
+    "simple_text": "A test showed pregnancy-related high blood sugar, requiring diet changes or insulin."
+  },
+  {
+    "complex_text": "An electrolyte panel displayed marked hyponatremia, raising suspicion for SIADH.",
+    "simple_text": "Low sodium in the blood suggests too much water retention, possibly from SIADH."
+  },
+  {
+    "complex_text": "Irritable bowel syndrome manifested as recurrent abdominal pain and altered bowel habits without organic cause.",
+    "simple_text": "Frequent stomach pain and changes in bowel movements, with no clear physical problem, point to IBS."
+  },
+  {
+    "complex_text": "Ultrasound revealed a bicornuate uterus, a congenital uterine anomaly potentially affecting fertility.",
+    "simple_text": "A scan showed a heart-shaped uterus that can sometimes impact pregnancy."
+  },
+  {
+    "complex_text": "Pituitary adenoma secreting prolactin leads to amenorrhea and galactorrhea in affected females.",
+    "simple_text": "A benign pituitary tumor making prolactin can stop periods and cause breast milk leakage."
+  },
+  {
+    "complex_text": "Morbid obesity escalates the likelihood of obstructive sleep apnea and metabolic syndrome.",
+    "simple_text": "Severe overweight greatly raises the risk of blocked breathing at night and metabolic problems."
+  },
+  {
+    "complex_text": "Laboratory findings of hemolysis and elevated liver enzymes signaled HELLP syndrome in pregnancy.",
+    "simple_text": "Blood results showed red blood cell breakdown, high liver enzymes, and low platelets in a pregnant woman."
+  },
+  {
+    "complex_text": "Pheochromocytoma was suspected due to episodic hypertension, headaches, and palpitations.",
+    "simple_text": "A hormone-making tumor in the adrenal gland was suspected because of sudden high blood pressure, headaches, and heart pounding."
+  },
+  {
+    "complex_text": "Spirometry consistent with restrictive lung disease necessitates evaluation for interstitial pathology.",
+    "simple_text": "A lung test showed restricted breathing capacity, so doctors will check for lung tissue problems."
+  },
+  {
+    "complex_text": "Polymyalgia rheumatica presents with proximal muscle stiffness and elevated inflammatory markers.",
+    "simple_text": "Pain and stiffness in shoulders and hips, plus high inflammation levels, indicate polymyalgia rheumatica."
+  },
+  {
+    "complex_text": "Elevated serum ammonia in cirrhotic patients triggers encephalopathy requiring lactulose therapy.",
+    "simple_text": "High ammonia from liver disease causes confusion, so lactulose is given."
+  },
+  {
+    "complex_text": "A patellar tendon rupture was identified, warranting surgical repair to restore knee extension.",
+    "simple_text": "The tendon under the kneecap tore, needing surgery to fix leg straightening."
+  },
+  {
+    "complex_text": "Incisional hernia emerged post laparotomy, necessitating mesh repair to prevent bowel strangulation.",
+    "simple_text": "A bulge formed at a past surgery site in the belly, so a mesh patch is needed to keep intestines safe."
+  },
+  {
+    "complex_text": "Psychiatric assessment revealed major depressive disorder characterized by anhedonia and persistent sadness.",
+    "simple_text": "They have severe depression, with loss of interest and ongoing low mood."
+  },
+  {
+    "complex_text": "Head CT showed epidural hematoma, indicating potential emergency craniotomy.",
+    "simple_text": "A brain scan found bleeding between the skull and brain lining, possibly needing urgent surgery."
+  },
+  {
+    "complex_text": "Elevated rheumatoid factor and anti-CCP antibodies support the diagnosis of rheumatoid arthritis.",
+    "simple_text": "High levels of certain antibodies mean rheumatoid arthritis is likely."
+  },
+  {
+    "complex_text": "Cardiomegaly on chest radiograph may imply dilated cardiomyopathy requiring echocardiographic correlation.",
+    "simple_text": "An enlarged heart on X-ray might mean a weak, stretched heart muscle, so an ultrasound is needed."
+  },
+  {
+    "complex_text": "Retinal detachment symptoms include photopsias and a curtain over the visual field, necessitating urgent repair.",
+    "simple_text": "Signs of a detached retina include flashes of light and a darkness over part of vision, needing quick surgery."
+  },
+  {
+    "complex_text": "Prolonged seizures constitute status epilepticus, requiring benzodiazepines and possible ICU support.",
+    "simple_text": "Long-lasting seizures are called status epilepticus, needing fast sedative drugs and possibly intensive care."
+  }
+]
