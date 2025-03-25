@@ -1,3 +1,4 @@
+// ChatInput.js
 import React, { useState, useRef } from 'react';
 import { Plus, Send, File } from 'lucide-react';
 
@@ -19,7 +20,7 @@ const ChatInput = ({ onSendMessage }) => {
     fileInputRef.current.click();
   };
 
-  const handleSendMessage = () => {
+  const handleSend = () => {
     if (message.trim() || files.length > 0) {
       onSendMessage(message, files);
       setMessage('');
@@ -37,7 +38,7 @@ const ChatInput = ({ onSendMessage }) => {
 
   return (
     <div className="chat-input-wrapper">
-      {/* Completely Hidden File Input */}
+      {/* Hidden File Input */}
       <input 
         type="file" 
         ref={fileInputRef}
@@ -66,7 +67,7 @@ const ChatInput = ({ onSendMessage }) => {
 
       {/* Input Container */}
       <div className="chat-input-container">
-        {/* File Upload Plus Button */}
+        {/* File Upload Button */}
         <button 
           onClick={triggerFileInput}
           className="file-upload-btn"
@@ -83,14 +84,14 @@ const ChatInput = ({ onSendMessage }) => {
           className="message-input"
           onKeyPress={(e) => {
             if (e.key === 'Enter') {
-              handleSendMessage();
+              handleSend();
             }
           }}
         />
 
         {/* Send Button */}
         <button 
-          onClick={handleSendMessage}
+          onClick={handleSend}
           className="send-btn"
           disabled={!message.trim() && files.length === 0}
         >
