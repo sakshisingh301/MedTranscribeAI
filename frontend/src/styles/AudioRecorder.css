@@ -1,0 +1,35 @@
+/* Container for the AudioRecorder */
+.audio-recorder-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styling for the input field */
+.audio-recorder-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* Button for recording */
+.audio-recorder-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Change color when recording */
+.audio-recorder-button.recording {
+    color: red;
+}
+
+.audio-recorder-button.default {
+    color: black;
+}
+
+/* Audio playback controls */
+.audio-recorder-audio {
+    margin-left: 10px;
+}
