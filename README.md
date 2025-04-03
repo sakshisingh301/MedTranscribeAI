@@ -4,17 +4,7 @@
 
 ---
 
-![Demo](https://your-demo-link.com/medtranscribe.gif) <!-- Optional demo gif -->
 
-## 📚 Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [How It Works](#how-it-works)
-- [Setup](#setup)
-
-
----
 
 ## 🧠 Overview
 
